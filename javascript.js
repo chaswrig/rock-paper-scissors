@@ -41,7 +41,7 @@ function playRound(choice) {
             console.log("You tied! You each get a point!");
             ++humanScore;
             ++computerScore;
-            content.textContent = "Win rate is " + humanScore + " to " + computerScore;
+            content.textContent = "Current score is " + humanScore + " to " + computerScore;
             results.appendChild(content);
         } else if ((humanChoice === "Rock" && computerChoice === "Scissors") ||
                 (humanChoice === "Paper" && computerChoice === "Rock") ||
@@ -49,12 +49,12 @@ function playRound(choice) {
             
             console.log("You wins this round! You earned one point!");
             ++humanScore;
-            content.textContent = "Win rate is " + humanScore + " to " + computerScore;
+            content.textContent = "Current score is " + humanScore + " to " + computerScore;
             results.appendChild(content);
         } else {
             console.log("Computer wins! It earned one point!");
             ++computerScore;
-            content.textContent = "Win rate is " + humanScore + " to " + computerScore;
+            content.textContent = "Current score is " + humanScore + " to " + computerScore;
             results.appendChild(content);
         } 
     } else {
